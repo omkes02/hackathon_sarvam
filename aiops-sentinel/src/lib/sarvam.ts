@@ -70,10 +70,10 @@ export async function sarvamTTS(
         "api-subscription-key": SARVAM_API_KEY,
       },
       body: JSON.stringify({
-        inputs: [text.slice(0, 500)],
+        inputs: [text.slice(0, 450)],
         target_language_code: lang,
-        speaker: "meera",
-        model: "bulbul:v1",
+        speaker: "priya",
+        model: "bulbul:v3",
       }),
     });
     const data = await res.json();
